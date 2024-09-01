@@ -1,0 +1,26 @@
+.edit-merchants{
+    margin: 15px 30px;
+}
+
+/* Handling buttons */
+.nav-buttons{
+    margin-top: 40px;
+    padding-left: 0;
+}
+
+.nav-buttons button{
+    background: #fff;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 192, 192);
+    cursor: pointer;
+    color: rgb(117, 114, 114);
+    cursor: pointer;
+}
+
+.nav-buttons .active{
+    background: rgb(35, 192, 83);
+    color: #fff;
+    border: 1px solid rgb(35, 192, 83);
+}

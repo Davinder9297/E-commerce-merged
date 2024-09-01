@@ -1,0 +1,189 @@
+.register_container {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../../Assets/Images/deliveryBoy.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 42vw 3vh;
+  position: relative;
+}
+
+.register_box_main {
+  /* min-height: 80vh; */
+  height: fit-content;
+  width: 32vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid red; */
+  position: absolute;
+  border-radius: 25px;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 7vh;
+}
+.register_box_main h1 {
+  /* text-align: center; */
+  font-size: 2rem;
+  color: var(--primary);
+  font-family: var(--second-font);
+  margin-block: 0vh 3vh;
+}
+
+.input_main {
+  /* border: 1px solid red; */
+  width: 70%;
+}
+
+.mobile_num {
+  display: relative;
+}
+.mobile_num p {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: black;
+  cursor: pointer;
+  color: var(--primary);
+}
+.mobile_num i {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+.mobile_num i svg {
+  color: var(--primary);
+}
+
+.input_main h3 {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8vh;
+  margin-block: 2vh;
+}
+.inputs span {
+  position: relative;
+}
+.inputs svg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.input_main input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  box-shadow: 1px 1.2px 2px 2px rgb(209, 199, 199);
+  box-shadow: 0px 4px 4px rgb(209, 199, 199);
+  padding-left: 40px;
+  font-size: 1.02rem;
+  background-color: transparent;
+}
+.inputs input:focus {
+  outline: none;
+}
+
+.action_button {
+  margin-block: 3vh 0vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+}
+
+.submit button {
+  height: 35px;
+  width: 80px;
+  font-size: 1.02rem;
+  background-color: var(--primary);
+  color: var(--body);
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0.5px 1px 5px black;
+  font-weight: 600;
+  cursor: pointer;
+}
+.submit button:hover {
+  background-color: var(--neutral);
+  color: var(--black);
+}
+
+.login_options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.btn_group {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .register_container {
+    min-height: 80vh;
+    width: 100%;
+    background-image: unset;
+    background-repeat: no-repeat;
+    background-size: unset;
+    background-position: unset;
+    position: relative;
+  }
+
+  .register_box_main {
+    /* min-height: 80vh; */
+    position: absolute;
+    height: fit-content;
+    width: 90vw;
+    left: 5%;
+    top: 10vh;
+    transform: unset;
+    background-color: transparent;
+    /* border: 1px solid red; */
+    box-shadow: unset;
+    padding-block: 2vh;
+    /* filter: blur(5px); */
+  }
+  .register_box_main h1 {
+    /* text-align: center; */
+    font-size: 1.5rem;
+    color: var(--secondary);
+    font-family: var(--second-font);
+    margin-block: 0vh 3vh;
+  }
+  .input_main {
+    /* border: 1px solid red; */
+    width: 90%;
+  }
+
+  .active {
+    background-color: var(--primary) !important;
+    border-radius: 8px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    color: var(--body);
+    transition: all 0.18s ease-in;
+    font-size: 0.85rem;
+    height: 35px;
+    width: 140px;
+  }
+  .inactive {
+    transition: all 0.18s ease-in;
+    font-size: 0.85rem;
+    height: 35px;
+    width: 125px;
+  }
+}

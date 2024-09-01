@@ -1,0 +1,41 @@
+.commission-settings{
+    margin: 30px 0;
+    color: rgb(117, 114, 114);
+}
+
+.payout-type{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.payout-type p{
+    font-size: 14px;
+}
+
+.payout-type input{
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.payout-type div{
+    border-radius: 4px;
+    background: rgb(35, 192, 83);
+    padding: 8px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.payout-value label{
+    font-size: 14px;
+}
+
+.payout-value input{
+    width: 400px;
+    height: 35px;
+    margin-top: 7px;
+    border: 1px solid rgb(117, 114, 114);
+    border-radius: 5px;
+    padding: 5px;
+}
+

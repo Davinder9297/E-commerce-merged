@@ -1,0 +1,52 @@
+.fontmons{
+    font-family: 'Montserrat', sans-serif;
+}
+.fontgobs{
+    font-family: 'Gorditas';
+
+}
+.rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 40px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #58B310;
+    transition: color 0.3s;
+  }
+  .ratingloader {
+    width: 30px;
+    height: 30px;
+    border: 5px solid #201d1d;
+    border-bottom-color: #58B310;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 0.6s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 

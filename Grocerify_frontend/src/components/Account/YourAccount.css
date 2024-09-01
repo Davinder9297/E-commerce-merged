@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Gorditas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.main-div {
+  color: #848484;
+  font-family: "Gorditas", sans-serif;
+  letter-spacing: 0em;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 5vw;
+}
+
+.heading h1 {
+  font-size: 32px;
+  line-height: 38.82px;
+  text-align: left;
+  width: fit-content;
+}
+
+.heading button {
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  margin: 10vh;
+  gap: 10vh;
+}
+
+.cd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d9d9d9;
+  border-radius: 13px;
+  width: 100%;
+  height: 187px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.cd:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add box-shadow on hover */
+  transform: scale(1.05);
+}
+
+.image {
+  width: 35%;
+  padding-left: 20px;
+  /* padding-top: 40px; */
+  padding-right: 20px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.cd-body {
+  /* flex: 1; */
+  /* border: 1px solid red; */
+  /* padding-top: 15px; */
+  height: fit-content;
+  width: 60%;
+}
+
+.cd-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 24.26px;
+  text-align: left;
+  width: 100%;
+  height: 24px;
+}
+
+.cd-text {
+  font-size: 16px;
+  line-height: 19.5px;
+  width: 167px;
+  height: 26px;
+  text-align: left;
+  font-family: "Montserrat";
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Two cards in one row for smaller screens */
+  }
+}
+
+@media (max-width: 890px) {
+  .cards {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Two cards in one row for smaller screens */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .heading h1 {
+    font-size: 24px;
+  }
+
+  .heading button {
+    font-size: 1rem;
+  }
+
+  .cards {
+    margin: 18px;
+    gap: 14px;
+  }
+
+  .cd {
+    height: 130px;
+  }
+
+  .image {
+    padding: 0 15px;
+  }
+
+  .image img {
+    width: 55px;
+  }
+
+  .cd-body {
+    padding-top: 0;
+  }
+}

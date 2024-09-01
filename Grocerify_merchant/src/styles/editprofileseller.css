@@ -1,0 +1,12 @@
+/* Add this CSS to your styles */
+.overflow-auto::-webkit-scrollbar {
+  width: 0px; 
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+  background-color: #ffffff; 
+}
+
+.overflow-auto::-webkit-scrollbar-track {
+  background-color: #ffffff; 
+}

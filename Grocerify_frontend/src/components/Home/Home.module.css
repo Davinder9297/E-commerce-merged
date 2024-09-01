@@ -1,0 +1,15 @@
+.home_main {
+  display: grid;
+}
+.model_container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.507);
+  z-index: 99999;
+  /* display: none; */
+}

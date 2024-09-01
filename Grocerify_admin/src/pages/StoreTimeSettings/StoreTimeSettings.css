@@ -1,0 +1,102 @@
+.take-orders-option{
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.take-orders-option p{
+    color: rgb(117, 114, 114);
+    font-size: 14px;
+}
+
+.required{
+    color: red;    
+}
+
+.save-btn button{
+    margin: 20px 0;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background: rgb(35, 192, 83);
+    color: #fff;
+    border-color: rgb(35, 192, 83);
+    cursor: pointer;
+}
+
+/* To be shown only when button is checked */
+.data-checked{
+    color: rgb(117, 114, 114);
+    /* display: none; */
+}
+
+.data-checked label{
+    font-size: 14px;
+}
+
+.timings{
+    display: flex;
+    margin: 10px 0 30px 0;
+    align-items: center;
+}
+
+.timings select{
+    padding: 10px 8px;
+    border-radius: 4px;
+    border-color: rgb(196, 192, 192);
+    color: rgb(117, 114, 114);
+    width: 120px;
+}
+
+.timings p{
+    margin: 0 10px;
+    font-size: small;
+}
+
+.days{
+    display: flex;
+}
+
+.days input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+
+.days button{
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 10px;
+    background-color: rgb(35, 192, 83);
+    color: #fff;
+    border: 1px solid rgb(35, 192, 83);
+    border-radius: 5px;
+    font-size: 16px;
+    font-size: 14px;
+}
+
+.message-container{
+    margin: 30px 0 0 0;
+}
+
+.message-container p{
+    font-size: 14px;
+}
+
+.message-container textarea{
+    width: 550px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.error-block{
+    margin-top: 40px;
+}
+
+.error-message{
+    font-size: 14px;
+    color: red;
+}

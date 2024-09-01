@@ -1,0 +1,62 @@
+.bg{
+    background-image: url('../../../public/about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.fontabout1{
+    font-family: 'Gorditas';
+
+}
+.fontabout2{
+    font-family: 'Montserrat', sans-serif;
+}
+.showhidden{
+    display: none;
+}
+.mainimg:hover .showhidden{
+    display: block;
+
+}
+.showhidden1{
+    display: none;
+}
+.mainimg1:hover .showhidden1{
+    display: block;
+
+}
+.showhidden2{
+    display: none;
+}
+.mainimg2:hover .showhidden2{
+    display: block;
+
+}
+.missionbox:hover .our{
+color: #58B310;
+}
+.missionbox:hover .mission{
+color: black;
+}
+.valuebox:hover .our2{
+color: #58B310;
+}
+.valuebox:hover .values{
+color: black;
+}
+.visionbox:hover .our4{
+color: #58B310;
+}
+.visionbox:hover .vision{
+color: black;
+}
+.companyvalues:hover .our3{
+color: #58B310;
+}
+.companyvalues:hover .company{
+color: black;
+}
+.companyvalues:hover .companyvalue{
+color: #58B310;
+}
+

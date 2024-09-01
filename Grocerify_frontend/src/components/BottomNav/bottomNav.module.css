@@ -1,0 +1,52 @@
+.bottom_nav_main {
+  width: 100%;
+
+  /* background-color: var(--neutral); */
+  display: grid;
+  align-items: center;
+}
+.icons_fixed {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons_fixed svg {
+  height: 24px;
+  width: 24px;
+  color: var(--primary);
+  fill: var(--primary);
+}
+
+.icons_fixed path {
+  fill: var(--primary);
+}
+.icons_fixed > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.icons_fixed p {
+  font-size: 0.8rem;
+}
+.cart {
+  position: relative;
+}
+
+.bubble {
+  position: absolute;
+  background: var(--primary);
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  font-size: 0.59rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--neutral);
+  right: 0;
+  top: 3px;
+  transform: translate(30%, -30%);
+}

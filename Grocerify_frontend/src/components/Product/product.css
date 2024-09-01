@@ -1,0 +1,36 @@
+.fontmont {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.fontgo {
+  font-family: "Gorditas";
+}
+.txtc {
+  text-decoration: line-through;
+}
+.slide {
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+.imagebutton::-webkit-scrollbar {
+  display: none;
+}
+.quantity_container {
+  height: fit-content;
+  width: 100px;
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 5px;
+  padding: 3px;
+  border-radius: 10px;
+}
+.quantity_container div {
+  height: 100%;
+  aspect-ratio: 1.15/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

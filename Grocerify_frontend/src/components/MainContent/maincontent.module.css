@@ -1,0 +1,166 @@
+.hero_image {
+  height: fit-content;
+  width: 100%;
+}
+.hero_image img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.products_main {
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  background-color: white;
+  padding: 0vh 0vw;
+}
+
+.products_top {
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-color-second);
+  font-family: var(--second-font);
+  font-weight: 400;
+  align-items: center;
+  padding: 0.5vw 2vw;
+}
+.products_top:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.products_top h1 {
+  font-size: 1.2rem;
+}
+.products_top span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.banner_main {
+  display: flex;
+  gap: 2%;
+  height: 270px;
+}
+.banner_main > img {
+  width: 66%;
+  /* border: 1px solid red; */
+}
+.hotdeals_main {
+  width: 32%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+}
+.heading span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.heading h3 {
+  font-size: 1rem;
+  font-family: var(--second-font);
+  color: var(--font-color-second);
+  /* margin-bottom: 8px; */
+}
+.product_card {
+  /* position: relative; */
+  /* display: grid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* place-items: center; */
+  /* border: 1px solid red; */
+  /* height: 260px; */
+}
+
+.product_card img {
+  width: max-content;
+  transform: translate(-70px, -21px);
+}
+
+.tag {
+  background-color: #fec0c1;
+  position: relative;
+  /* top: 10px; */
+  left: 120px;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  color: var(--body);
+  font-family: Gorditas;
+}
+
+.details {
+  /* position: absolute; */
+  /* border: 1px solid red; */
+  width: 40%;
+  left: 10px;
+}
+.details h5 {
+  color: var(--primary);
+  font-size: 2rem;
+  font-family: Gorditas;
+  font-weight: 600;
+}
+
+.banner2 {
+  height: 220px;
+  position: relative;
+}
+.banner2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.banner2 span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--primary);
+  padding: 5px 10px;
+  transform: rotate(-45deg);
+  transform-origin: left center;
+  /* white-space: nowrap; */
+}
+.banner2 span::after {
+  content: "";
+}
+
+@media (max-width: 800px) {
+  .hero_carousel_main {
+    /* border: 1px solid red; */
+    width: 100vw;
+    padding: 10px 10px !important;
+  }
+  .hero_image {
+    height: fit-content;
+    width: 100%;
+  }
+  .hero_image img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .banner_main {
+    display: flex;
+    gap: 2%;
+    height: fit-content;
+  }
+  .banner_main > img {
+    width: 66%;
+    height: auto;
+    object-fit: cover;
+    /* border: 1px solid red; */
+  }
+  .hotdeals_main {
+    width: 32%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .hotdeals_main {
+    display: none;
+  }
+}

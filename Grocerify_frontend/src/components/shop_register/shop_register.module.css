@@ -1,0 +1,139 @@
+.shop_register_main {
+  height: 120vh;
+  width: 100%;
+  /* border: 4px solid red; */
+}
+.bg_image {
+  width: 100%;
+  height: 100%;
+}
+.bg_image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.form_main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  width: 33vw;
+}
+
+.form_top {
+  padding: 12px 0px;
+  background-color: white;
+  border-radius: 12px 12px 0px 0px;
+}
+.form_top h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.scrollable_form {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 3vh 3vw;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.scrollable_form::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollable_form::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: var(--primary);
+}
+.scrollable_form::-webkit-scrollbar-track {
+  width: 10px;
+  background-color: var(--neutral);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin-block: 2vh;
+}
+.inputs > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1vh;
+  margin-block: 1vh;
+}
+.inputs span {
+  position: relative;
+}
+
+.inputs p {
+  font-size: 1.05rem;
+  margin-bottom: 5px;
+}
+.inputs h4 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  /* margin-block: 2vh; */
+}
+
+.inputs input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  margin-top: 5px;
+  box-shadow: 0px 6px 6px rgb(222, 214, 214);
+  padding-left: 15px;
+  font-size: 1.02rem;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.inputs textarea {
+  box-shadow: 0px 6px 6px rgb(209, 199, 199);
+  background-color: transparent;
+}
+.inputs input:focus {
+  outline: none;
+}
+
+.inputs p::after {
+  content: "*";
+  height: 15px;
+  width: 15px;
+  margin-left: 3px;
+}
+
+.checkbox_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px 0px;
+  /* border: 2px solid red; */
+}
+
+.d_service {
+  display: flex;
+  gap: 3rem;
+}
+.d_service span {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.submit {
+  display: grid;
+  place-items: center;
+}
+.submit button {
+  background-color: var(--primary);
+  font-size: 1.14rem;
+  padding: 5px 15px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .form_main {
+    top: 20%;
+    right: 5%;
+    width: 90%;
+  }
+}

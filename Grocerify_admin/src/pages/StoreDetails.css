@@ -1,0 +1,116 @@
+.StoreDetails{
+    width: 75%;
+    margin: 15px 0; 
+}
+/* Merchants-info */
+.Merchants-info h2, .Store-info h2{
+    font-weight: 400;
+    color: rgb(35, 192, 83);
+}
+.Merchants-info-form div span{
+    color: red;
+    font-size: 12px;
+}
+.Merchants-info-form label span{
+    color: red;
+}
+#size{
+    font-size: 12px;
+}
+.Merchants-info-form{
+    position: relative;
+    width: 70vw;
+    padding-top: 10px;
+}
+.Merchants-info-form form{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.Merchants-info-form label{
+    display: inline-block;
+    padding: 11px 0 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(117, 114, 114);
+}
+.Merchants-info-form form input{
+    width: 430px; 
+    height: 30px;
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(196, 192, 192);
+    color: rgb(117, 114, 114);
+}
+.Merchants-info-form form textarea{
+    height: 200px;
+    width: 430px;
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(196, 192, 192);
+    color: rgb(117, 114, 114);
+}
+#about-us{
+    padding-top: 20px;
+}
+
+/* Store-info */
+.Store-info{
+    padding-top: 30px;
+}
+#Form-in-operations{
+    position: absolute;
+    width: 430px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    
+}
+form #Form-in-operations input{
+    height: 20px;
+    width: 100px;
+}
+#Form-in-operations button{
+    height: 25px;
+    border: none;
+    outline: none;
+    background: rgb(35, 192, 83);
+    color: #fff;
+    border-radius: 5px;
+}
+form .btn-1, form .btn-2{
+    width: 170px;
+}
+form .btn-3{
+    width: 170px;
+}
+.Merchants-info-form  input[type="file"]{
+    background: url('../assets/Add.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    height: 200px;
+}
+#fileupload{
+    background-color: rgb(226, 222, 222);
+}
+::-webkit-file-upload-button{
+    display: none;
+}
+/* Form Save button */
+.Merchants-info-form .Save-btn{
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    
+}
+.Merchants-info-form .Save-btn button{
+    height: 30px;
+    width: 60px;
+    background: rgb(35, 192, 83);
+    border: 1px solid rgb(35, 192, 83);
+    color: #fff;
+    border-radius: 5px;
+}

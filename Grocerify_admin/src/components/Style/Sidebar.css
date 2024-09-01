@@ -1,0 +1,32 @@
+/* Sidebar.css */
+
+/* Custom scrollbar styles for vertical scrollbar only */
+/* For Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the vertical scrollbar */
+    height: auto; /* Ensure the height adjusts automatically */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Set a transparent background color for the scrollbar track */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Set the background color of the scrollbar handle */
+    border-radius: 5px; /* Set the border radius of the scrollbar handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Set the background color of the scrollbar handle on hover */
+  }
+  
+  /* Hide horizontal scrollbar */
+  /* This will hide the horizontal scrollbar while keeping the vertical scrollbar */
+  /* Note: This will only work on WebKit-based browsers like Chrome, Safari, and Opera */
+  ::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+  }
+  
